@@ -2,5 +2,9 @@ language: python
 python: 
   - "3.7"
 install: "pip3 install -r requirements.txt"
+
+before_script:
+ - chmod +x grailsw
+ 
 script:
-  - "SECRET_KEY" ./manage.py test
+  - SECRET_KEY="whateveritmaybe" ./manage.py test
