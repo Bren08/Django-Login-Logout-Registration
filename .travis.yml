@@ -4,4 +4,4 @@ python:
 install: "pip3 install -r requirements.txt"
 import: 
 script:
-  - "SECRET_KEY" /manage.py test
+  - (os.getenv = "SECRET_KEY") /manage.py test
