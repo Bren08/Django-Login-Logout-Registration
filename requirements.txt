@@ -1,7 +1,6 @@
 asgiref==3.4.1
 astroid==2.2.5
 bash==0.6
-bson==0.5.10
 certifi==2019.6.16
 chardet==3.0.4
 Click==7.0
