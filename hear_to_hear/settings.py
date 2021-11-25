@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True ##Application crashes if set to False
+DEBUG = False ##Application crashes if set to False
 
 ALLOWED_HOSTS = ['hear-to-hear.herokuapp.com', '127.0.0.1']
 
@@ -156,7 +156,7 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 
 MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
 
-# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
